@@ -87,7 +87,7 @@ export const office = {
   sub: "A calm space for healing",
   body: "My Santa Monica office is a quiet, private space designed to feel calm and grounding, with natural light and a comfortable, uncluttered environment. Clients often share that the space itself helps them feel more at ease the moment they arrive.",
   details: [
-    "123 1/2 Street, 45 W, Santa Monica, CA 90401 (verify exact address from profile)",
+    "123 1/2 Street, 45 W, Santa Monica, CA 90401",
     "In-person and telehealth sessions available",
     "Telehealth available to clients located anywhere in California",
     "A private, uncluttered space with natural light",
