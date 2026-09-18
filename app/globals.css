@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: #F5F2EA;
+  color: #262624;
+}
+
+::selection {
+  background-color: #C9A25D;
+  color: #1D2B22;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #2F4538;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* placeholder image blocks — swap these <div data-img> slots for real <Image> tags
+   once photos from the profile's Drive folder / your own sourcing are in /public/images */
+.img-slot {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ECE6D9 0%, #D9CFB8 100%);
+}
+.img-slot::after {
+  content: attr(data-label);
+  position: absolute;
+  left: 0.75rem;
+  bottom: 0.75rem;
+  font-family: var(--font-work-sans), sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  color: #5B584F;
+  background: rgba(245, 242, 234, 0.85);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+}
